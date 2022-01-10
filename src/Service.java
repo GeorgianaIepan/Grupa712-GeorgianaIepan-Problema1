@@ -9,12 +9,9 @@ public class Service {
                 .collect(Collectors.toList());
     }
 
-    public List<Offerte> filterListeByStatus(List<Offerte> liste, Status status, Integer hoursSpend) {
+    public List<Offerte> filterListeByStatus(List<Offerte> liste, Status status, Integer hoursSpend, Integer hourBuget) {
         return liste.stream()
-                .filter(tier -> {
-
-                    return tier.getStatus() == s1 ;
-                })
+                .filter(offerte -> hourBuget>hoursSpend && status != Status.Done)
                 .collect(Collectors.toList());
     }
 }
