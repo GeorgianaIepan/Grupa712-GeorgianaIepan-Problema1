@@ -14,7 +14,7 @@ public class Main {
             System.out.println(service.sortListeOfferteByHoursSpent(offerteList));
             System.out.println(service.filterListeByStatus(offerteList, Status.Open, Status.InProgress));
 
-            repo.writeToFile("D:\\UBB\\3.2. MAP\\LABORATOR\\PROIECTE\\Grupa712-GeorgianaIepan-Problema1\\src\\offertenResults.txt", offerteList, "$");
+            repo.writeToFile("D:\\UBB\\3.2. MAP\\LABORATOR\\PROIECTE\\Grupa712-GeorgianaIepan-Problema1\\src\\statistik.txt", offerteList, "$");
 
 
         } catch (IOException e) {

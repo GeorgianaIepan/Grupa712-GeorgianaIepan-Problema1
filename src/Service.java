@@ -9,7 +9,7 @@ public class Service {
                 .collect(Collectors.toList());
     }
 
-    public List<Offerte> filterListeByStatus(List<Offerte> liste, Status s1, Status s2) {
+    public List<Offerte> filterListeByStatus(List<Offerte> liste, Status status, Integer hoursSpend) {
         return liste.stream()
                 .filter(tier -> {
 
